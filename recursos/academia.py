@@ -33,23 +33,19 @@ class Academia(Resource):
         argumentos.add_argument('valor')
         argumentos.add_argument('cidade')
 
-        def buscando(academia_id):
-                for academia in academias:
-                        if academia['academia_id'] == academia_id:
-                                return academia
-                return None
         def get(self,academia_id):
                 academia = Academia.buscando(academia_id)
                 if academia:
                         return academia
                 return {'message': 'Hotel not found'}, 404
         def post(self,academia_id):
+                if modelos.buscando(academia_id):
+                        return {'Mensagem':'A Academia "{}" ja existe'.format(academia_id)}, 400 #bad
                 dados = Academia.argumentos.parse_args()
                 academia_objeto = ModelAcademi(academia_id,**dados)
-                nova_academia = academia_objeto.json()
-                #nova_academia = {'academia_id':academia_id, **dados}
-                academias.append(nova_academia)
-                return nova_academia, 200
+                academia.save_academia()
+                return academia.json()
+
         def put(self,academia_id):
                 dados = Academia.argumentos.parse_args()
                 academia_objeto = ModelAcademi(academia_id, **dados)
