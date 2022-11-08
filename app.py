@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_restful import Api
 from recursos.academia import Academias,Academia
-#Teste
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///banco.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False

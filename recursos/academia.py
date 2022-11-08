@@ -1,5 +1,5 @@
 from flask_restful import Resource,reqparse
-from modelos.academia import ModelAcademi
+from modelos.academia import ModelAcademia
 
 academias = [
         {
@@ -34,21 +34,21 @@ class Academia(Resource):
         argumentos.add_argument('cidade')
 
         def get(self,academia_id):
-                academia = Academia.buscando(academia_id)
+                academia = ModelAcademia.buscando(academia_id)
                 if academia:
                         return academia
                 return {'message': 'Hotel not found'}, 404
         def post(self,academia_id):
                 if modelos.buscando(academia_id):
-                        return {'Mensagem':'A Academia "{}" ja existe'.format(academia_id)}, 400 #bad
+                        return {'Mensagem':'A Academia "{}" ja existe'.format(academia_id)}, 400 #Requisição errada
                 dados = Academia.argumentos.parse_args()
-                academia_objeto = ModelAcademi(academia_id,**dados)
-                academia.save_academia()
-                return academia.json()
+                academia_objeto = ModelAcademia(academia_id,**dados)
+                academia_objeto.save_academia()
+                return academia_objeto.json()
 
         def put(self,academia_id):
                 dados = Academia.argumentos.parse_args()
-                academia_objeto = ModelAcademi(academia_id, **dados)
+                academia_objeto = ModelAcademia(academia_id, **dados)
                 nova_academia = academia_objeto.json()
                 academia = Academia.buscando(academia_id)
                 if academia:

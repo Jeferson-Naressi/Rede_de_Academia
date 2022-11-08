@@ -1,7 +1,6 @@
 from sql_alchemy import banco
 
-
-class ModelAcademi(banco.Model):
+class ModelAcademia(banco.Model):
     __tablename__ = 'academias'
 
     academia_id = banco.Column(banco.String, primary_key=True)
@@ -27,8 +26,8 @@ class ModelAcademi(banco.Model):
         }
 
     @classmethod
-    def buscando(cls, academia_id):
-        academia = cls.query.filter_by(academia_id=academia_id).first()
+    def buscando(ModelAcademia, academia_id):
+        academia = ModelAcademia.query.filter_by(academia_id=academia_id).first()
         if academia:
             return academia
         return None
