@@ -16,8 +16,6 @@ Pycharm, SQLite3, Postman
  
 # 🔥Executando o Projeto Localmente:
 Para executar o projeto, basta você baixa os arquivos.
-=======
->>>>>>> 0f4592a336f003098a074303755dbf84363a1941
 
 Após a instalação precisamos criar o ambiente virtual com o seguinte comando.
 ![img_4.png](img_4.png)
@@ -35,4 +33,3 @@ Caso qualquer erro entrar no arquivo .txt e instalar manualmente as requisiçõe
  
 # 🔥Executando o Projeto Localmente:
 Para executar o projeto, basta você baixa os arquivos.
->>>>>>> 0f4592a336f003098a074303755dbf84363a1941
