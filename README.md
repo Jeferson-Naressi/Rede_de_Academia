@@ -70,3 +70,7 @@ Agora vamos para o GET consultar se foi de fato excluida a academia
 ![img_15.png](img_15.png)
 
 e se você buscar por qualquer outra academia em nosso banco de dados
+![img_16.png](img_16.png)
+
+e por fim nosso banco de dados ficou assim.
+![img_17.png](img_17.png)
