@@ -11,9 +11,10 @@ Esse Projeto tem como objetivo mostrar uma API com iteração com banco de dados
 Projeto tem como objetivo o usuário fazer um CRUD na API (Criar, Ler, Alterar, Deletar) acessando o bando de dados SQLite3
 
 # Ambiente.
+Para executar o projeto, basta você baixa os arquivos.
 Pycharm, SQLite3, Postman
 
-Após a instalação precisamos criar o ambiente virtual com o seguinte comando.
+Após a instalação precisamos criar o ambiente virtual dentro do Pycharm com o seguinte comando.
 
 ![img_4.png](img_4.png)
 
@@ -37,7 +38,9 @@ pip install Flask-SQLAlchemy
 Caso qualquer erro entrar no arquivo .txt e instalar manualmente as requisições. pip install nomeDaRequisição
  
 # 🔥Executando o Projeto Localmente:
-Para executar o projeto, basta você baixa os arquivos.
+
+Basta executar o arquivo app.py dentro mesmo do Pycharm como segue na imagem
+![img_18.png](img_18.png)
 
 Usando as configurações do Postman com nosso IP: http://127.0.0.1:5000/academia
 Podemos consultar quais academias temos em nosso banco de dados. Segue a imagem
