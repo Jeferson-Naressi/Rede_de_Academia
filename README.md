@@ -11,7 +11,7 @@ Esse Projeto tem como objetivo mostrar uma API com iteração com banco de dados
 Projeto tem como objetivo o usuário fazer um CRUD na API (Criar, Ler, Alterar, Deletar) acessando o bando de dados SQLite3
 
 # Ambiente.
-Para executar o projeto, basta você baixa os arquivos.
+Para executar o projeto, basta você baixar os arquivos.
 Pycharm, SQLite3, Postman
 
 Após a instalação precisamos criar o ambiente virtual dentro do Pycharm com o seguinte comando.
