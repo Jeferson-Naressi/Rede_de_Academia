@@ -22,7 +22,7 @@ Agora vamos ativar nosso ambiente virtual com o seguinte comando
 
 ![img_3.png](img_3.png)
 
-Perceba que o código esta em amarelo. Após o enter ele ativa nosso ambiente virtual perceba que agora na linha de baixa começa com (Rede_de_Academia).
+Perceba que o código esta em amarelo. Após o enter ele ativa nosso ambiente virtual perceba que agora na linha de baixo começa com (Rede_de_Academia).
 
 Para que o programa rode é necessário fazer a instalação de todas a requisições do arquivo: requirements.txt. Para quem usa o Pycharm colocando o comando pip install -r requirements.txt é o suficiente para os downloads. Segue a imagem ilustrativa a baixo.
 
@@ -47,20 +47,20 @@ Podemos consultar quais academias temos em nosso banco de dados. Segue a imagem
 ![img_5.png](img_5.png)
 
 
-Vamos adicionar uma nova academia, perceba na imagem a baixo que ja foi adicionada uma nova academia ao banco e dados
+Vamos adicionar uma nova academia, perceba na imagem a baixo que ja foi adicionada uma nova academia ao banco de dados
 ![img_6.png](img_6.png)
 
 caso queira adicionar novamente a mesma informação, você será notificado que ela já existe no bando de dados.
 ![img_7.png](img_7.png)
 
-Caso você tenha errado e precise alterar algo, vamos a função PUT que ela não só altera como verifica se existe no banco, se ja existir ela altera, caso não, ela criar um novo.
+Caso você tenha errado e precise alterar algo, vamos a função PUT que ela não só altera como verifica se existe no banco de dados, se ja existir ela alterar, caso não, ele cria um novo.
 Vamos alterar primeiro.
 ![img_8.png](img_8.png)
 
 como vocês podem observar a palavra "Academia" foi retirado do nome. Continuando vamos criar uma nova academia também na função PUT
 ![img_9.png](img_9.png)
 
-Agora vamos verificar em nosso banco de dado as informações que foram adicionadas.
+Agora vamos verificar em nosso banco de dados as informações que foram adicionadas.
 ![img_12.png](img_12.png)
 Perceba na imagem a cima que a academia "Cross" teve seu nome alterado com sucesso e tambem a nova academia Delta foi adicionada como fizemos.
 
